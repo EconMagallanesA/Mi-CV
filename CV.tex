@@ -18,6 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{newpxtext}
+\usepackage{newpxmath}
 % only for pdflatex
 % \input{glyphtounicode}
 
@@ -46,10 +48,7 @@
 }
 
 
-% custom font: helvetica-style
-\usepackage{tgheros}
-\renewcommand*\familydefault{\sfdefault} 
-%% Only if the base font of the document is to be sans serif
+% use NewPX as the default text font
 \usepackage[T1]{fontenc}
 
 
@@ -137,103 +136,73 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge Harshibar} \\ \vspace{5pt}
-    \small \faPhone* \texttt{555.555.5555} \hspace{1pt} $|$
-    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{hello@email.com} \hspace{1pt} $|$ 
-    \hspace{1pt} \faYoutube \hspace{2pt} \texttt{harshibar} \hspace{1pt} $|$
-    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{U.S. Citizen}
+    \textbf{\Huge Andrés Sebastián Magallanes Sánchez} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+58 412-6397075} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{magallanes.as23@gmail.com} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Caracas, Venezuela}
     \\ \vspace{-3pt}
 \end{center}
 
-%-----------EXPERIENCE-----------
-\section{EXPERIENCE}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {YouTube}{Aug. 2019 -- Present}
-      {Creator (\href{https://www.youtube.com/c/harshibar}{\myuline {@harshibar}})}{San Francisco, CA}
-      \resumeItemListStart
-        \resumeItem{Grew channel to \textbf{60k subscribers in 1.5 years}; created 80+ videos on tech and productivity}
-        \resumeItem{Conducted A/B testing on titles and thumbnails; \textbf{increased video impressions by 2.5M} in 3 months}
-         \resumeItem{Designed a Notion workflow to streamline video production and roadmapping; boosted productivity by 20\%}
-        \resumeItem{\textbf{Partnered with brands like Skillshare and Squarespace} to expand their outreach via sponsorships}
-        \resumeItem{\textbf{Highlights}:
-            \href{https://www.youtube.com/watch?v=HhWUjp5pD0g}{\myuline {The Problem with Productivity Apps}}, \href{https://www.youtube.com/watch?v=ms4cWMsOITs}{\myuline {Obsidian App Review}},
-            \href{https://www.youtube.com/watch?v=PkDbkyIR44w}{\myuline {Not-So-Minimal Desk Setup}}}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Google Verily}{Aug. 2018 -- Sept. 2019}
-      {Software Engineer}{San Francisco, CA}
-      \resumeItemListStart
-        \resumeItem{\textbf{Led front-end development} of a dashboard to process 50k blood samples and detect early-stage cancer}
-        \resumeItem{Rebuilt a Quality Control product with input from 20 cross-functional stakeholders, \textbf{saving \$1M annually}}
-        \resumeItem{Spearheaded product development of a new lab workflow tool, leading to a 40\% increase in efficiency; \\ shadowed 10 core users, iterated on design docs, and implemented the solution with one engineer}
-
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Amazon}{May 2017 -- Aug. 2017}
-      {Software Engineering Intern}{Seattle, WA}
-      \resumeItemListStart
-        \resumeItem{Worked on the Search Customer Experience Team; \textbf{received a return offer} for a full-time position}
-        \resumeItem{\textbf{Shipped a new feature to 2M+ users} to improve the search experience for movie series-related queries}
-        \resumeItem{Built a back-end database service in Java and implemented a front-end UI to support future changes}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-
-\section{PROJECTS}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Hyku Consulting}} {Sept. 2019 -- Mar. 2021}
-          \resumeItemListStart
-            \resumeItem{Mentored 15 students towards acceptance at top US boarding schools; achieved \textbf{100\% success rate}}
-            \resumeItem{Designed a \textbf{collaborative learning ecosystem} for students and parents with Trello, Miro, and Google Suite}
-          \resumeItemListEnd
-          
-        \resumeProjectHeading
-          {\textbf{Minimal Icon Pack}}{Sept. 2020 -- Nov. 2020}
-          \resumeItemListStart
-            \resumeItem{Designed and released 100+ minimal iOS and Android icons from scratch using Procreate and Figma}
-            \resumeItem{Marketed the product and design process on {\href{https://www.youtube.com/watch?v=Ju32r7QJCzk}{\myuline {YouTube}}}; accumulated over \textbf{\$250 in sales} on {\href{https://gumroad.com/l/icons-by-harshibar}{\myuline {Gumroad}}}}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-         {\textbf{CommonIntern}}{Sept. 2019 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Built a Python script to automatically apply to jobs on Glassdoor using BeautifulSoup and Selenium}
-            \resumeItem{\textbf{500 stars on \href{https://github.com/harshibar/common-intern}{\myuline {GitHub}}}; featured on {\href{https://hackaday.com/2020/05/30/job-application-script-automates-the-boring-stuff-with-python}{\myuline {Hackaday}}}; made the front page of {\href {https://www.reddit.com/r/Python/comments/gpaegj/i_was_tired_of_opening_100s_of_tabs_for/?utm_source=share}{\myuline {r/python}}} and {\href {https://www.reddit.com/r/programming/comments/dcmbzx/i_was_tired_of_opening_100s_of_tabs_for/}{\myuline {r/programming}}}}
-          \resumeItemListEnd
-          
-    \resumeSubHeadingListEnd
-
-
+%-----------RESUMEN / PERFIL-----------
+\section{Resumen}
+\small{
+Economista con formación en análisis cuantitativo y experiencia en investigación y docencia universitaria. He participado en proyectos para organismos multilaterales y no gubernamentales. Mi trayectoria combina la investigación académica con práctica profesional, destacando procesos de recolección, procesamiento y visualización de datos, así como en la formación de estudiantes universitarios. Destaco por habilidades de organización, comunicación efectiva, trabajo en equipo y compromiso en generar impacto más allá de los números.
+}
 
 %-----------EDUCATION-----------
-\section {EDUCATION}
+\section {EDUCACIÓN}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Wellesley College}{Aug. 2014 -- May 2018}
-      {Bachelor of Arts in Computer Science and Pre-Med}{Wellesley, MA}
+      {Universidad Católica Andrés Bello}{Sep. 2020 -- Jul. 2024}
+      {Economista}{Caracas, VE}
       	\resumeItemListStart
-    	\resumeItem {\textbf{Coursework}: Data Structures, Algorithms, Databases, Computer Systems, Machine Learning}
-        \resumeItem 
-            {\textbf{Research}: MIT Graybiel Lab (published author), MIT Media Lab (analyzed urban microbe spread)}
+    	\resumeItem {\textbf{Trabajo de grado}: \textit{Gasto público y crecimiento: Impacto de la reforma de pensiones de Australia de 1992, a través del Método de Control Sintético en el periodo 1980-2019}. Nota 20/20. \textbf{Mención publicación.}}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------EXPERIENCE-----------
+\section{EXPERIENCIA}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Anova Policy Research}{Caracas, VE}      
+      {Economista investigador}{Enero 2026 -- Actualidad} 
+      \resumeItemListStart
+        \resumeItem{Pronóstico macroeconómico y análisis de deuda para países de América Latina y el Caribe, utilizando modelos econométricos y visualización de resultados con R y Power BI.}
+        \resumeItem{Monitoreo y procesamiento de datos, y diseño de pesos muestrales para encuestas socioeconómicas.}
+        \resumeItem{Procesamiento y cálculo de índices microeconómicos a partir de Encuestas de Hogares de países de la región.}
+        \resumeItem{Redacción de informes técnicos y presentación de resultados usando herramientas del ambiente de Microsoft Office.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Universidad Católica Andrés Bello}{Febrero 2023 -- Actualidad}
+      {Docencia universitaria}{Caracas, VE}
+      \resumeItemListStart
+        \resumeItem{\textbf{Asistente de Cátedra -- Econometría I} (Septiembre 2024 -- Febrero 2025): Impartición de clases de apoyo, diseño de materiales pedagógicos y coordinación de evaluaciones.}
+        \resumeItem{\textbf{Preparador -- Econometría I} (Febrero 2023 -- Mayo 2024): Planificación de clases teóricas-prácticas sobre los modelos de regresión lineal simple y múltiple; interpretación y supuestos de estimadores e introducción a series de tiempo.}
+        \resumeItem{\textbf{Preparador -- Teoría y Política de Comercio Internacional} (Septiembre 2023 -- Marzo 2024): Realización de clases teórico-prácticas sobre la teoría de comercio internacional: modelos ricardiano, Heckscher-Ohlin y Factores específicos. Revisión de teoría arancelaria, economías de escala y crecimiento.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Econalítica}{Febrero 2024 -- Abril 2024}
+      {Asistente de investigación - Equipo de investigación}{Caracas, VE}
+      \resumeItemListStart
+        \resumeItem{Apoyo en el desarrollo de bases de datos sistematizadas, generando consolidados para \textbf{facilitar el análisis de la economía venezolana.}}        
+        \resumeItem{Generación de visualizaciones de datos  a través de Microsoft Excel para la presentación de resultados de investigación.}
+        \resumeItem{Redacción de informes semanales y quincenales sobre la economía venezolana e internacional.}
+        \resumeItem{Apoyo en la realización de estudios de mercado y consultoría empresarial.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{SKILLS}
+\section{COMPETENCIAS TÉCNICAS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages} {: Python, JavaScript (React.js), HTML/CSS, SQL (PostgreSQL, MySQL)}\vspace{2pt} \\
-     \textbf{Tools}     {: Figma, Notion, Jira, Trello, Miro, Google Analytics, GitHub, DaVinci Resolve, OBS}
+     \textbf{Lenguajes} {: R, Python, Stata e Eviews (Intermedio)}\vspace{2pt} \\
+     \textbf{Microsoft Office}     {: Excel, Word y PowerPoint (Intermedio)}\vspace{2pt} \\
+     \textbf{Idiomas}     {: Español (nativo), Inglés (B2), Alemán (A1)}\vspace{2pt} \\
     }}
  \end{itemize}
 
