@@ -16,7 +16,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage{tabularx}
 \usepackage{newpxtext}
 \usepackage{newpxmath}
@@ -37,7 +37,7 @@
 \DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
 \DeclareTextFontCommand{\texteb}{\ebseries}
 
-% custom underilne
+% custom underline
 \usepackage{contour}
 \usepackage[normalem]{ulem}
 \renewcommand{\ULdepth}{1.8pt}
@@ -47,10 +47,8 @@
   \llap{\contour{white}{#1}}%
 }
 
-
 % use NewPX as the default text font
 \usepackage[T1]{fontenc}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -71,20 +69,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting - serif
-% \titleformat{\section}{
-%   \vspace{2pt} \scshape \raggedright\large % header section
-% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
-
-% TODO EBSERIES
 % sans serif sections
 \titleformat {\section}{
     \bfseries \vspace{2pt} \raggedright \large % header section
 }{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
-
-% only for pdflatex
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -120,7 +108,6 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-% CHANGED default leftmargin  0.15 in
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -130,7 +117,6 @@
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -147,19 +133,8 @@
 %-----------RESUMEN / PERFIL-----------
 \section{Resumen}
 \small{
-Economista con formación en análisis cuantitativo y experiencia en investigación y docencia universitaria. He participado en proyectos para organismos multilaterales y no gubernamentales. Mi trayectoria combina la investigación académica con práctica profesional, destacando procesos de recolección, procesamiento y visualización de datos, así como en la formación de estudiantes universitarios. Destaco por habilidades de organización, comunicación efectiva, trabajo en equipo y compromiso en generar impacto más allá de los números.
+Economista de la Universidad Católica Andrés Bello con experiencia en investigación aplicada, análisis macroeconómico y evaluación de experimentos controlados aleatorizados (RCTs). Poseo trayectoria en la conducción de proyectos para la evaluación de políticas públicas, diseño e implementación de encuestas de hogares y procesamiento de microdatos. Además, cuento con experiencia docente universitaria en las áreas de comercio internacional y econometría, aplicando herramientas estadísticas y de análisis cuantitativo (R, Python, Stata) para abordar problemas socioeconómicos complejos.
 }
-
-%-----------EDUCATION-----------
-\section {EDUCACIÓN}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Universidad Católica Andrés Bello}{Sep. 2020 -- Jul. 2024}
-      {Economista}{Caracas, VE}
-      	\resumeItemListStart
-    	\resumeItem {\textbf{Trabajo de grado}: \textit{Gasto público y crecimiento: Impacto de la reforma de pensiones de Australia de 1992, a través del Método de Control Sintético en el periodo 1980-2019}. Nota 20/20. \textbf{Mención publicación.}}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCIA}
@@ -169,9 +144,11 @@ Economista con formación en análisis cuantitativo y experiencia en investigaci
       {Anova Policy Research}{Caracas, VE}      
       {Economista investigador}{Enero 2026 -- Actualidad} 
       \resumeItemListStart
-        \resumeItem{Pronóstico macroeconómico y análisis de deuda para países de América Latina y el Caribe, utilizando modelos econométricos y visualización de resultados con R y Power BI.}
-        \resumeItem{Monitoreo y procesamiento de datos, y diseño de pesos muestrales para encuestas socioeconómicas.}
-        \resumeItem{Procesamiento y cálculo de índices microeconómicos a partir de Encuestas de Hogares de países de la región.}
+        \resumeItem{Recolección, procesamiento y pronóstico de variables macroeconómicas, mostrando resultados a través de un dashboard interactivo usando Power BI.}
+        \resumeItem{Implementación y monitoreo de encuesta panel de hogares a escala nacional, así como estimación de pesos muestrales y pesos panel ajustados por el nivel de atrición.}
+        \resumeItem{Procesamiento y análisis de encuestas de hogares y laborales de países de América Latina, para la construcción de variables de pobreza, pobreza multidimensional, desigualdad y del mercado laboral.}
+        \resumeItem{Monitoreo, procesamiento de datos y análisis econométrico de RCTs para evaluar la discriminación del mercado crediticio a migrantes.}
+        \resumeItem{Revisión de literatura especializada para la fundamentación de investigaciones y proyectos.}
         \resumeItem{Redacción de informes técnicos y presentación de resultados usando herramientas del ambiente de Microsoft Office.}
       \resumeItemListEnd
 
@@ -179,24 +156,24 @@ Economista con formación en análisis cuantitativo y experiencia en investigaci
       {Universidad Católica Andrés Bello}{Febrero 2023 -- Actualidad}
       {Docencia universitaria}{Caracas, VE}
       \resumeItemListStart
+        \resumeItem{\textbf{Profesor (sin clasificar) -- Teoría y Política de Comercio Internacional} (Septiembre 2026 -- Actualidad): Impartición de clases teóricas y evaluaciones.}
         \resumeItem{\textbf{Asistente de Cátedra -- Econometría I} (Septiembre 2024 -- Febrero 2025): Impartición de clases de apoyo, diseño de materiales pedagógicos y coordinación de evaluaciones.}
-        \resumeItem{\textbf{Preparador -- Econometría I} (Febrero 2023 -- Mayo 2024): Planificación de clases teóricas-prácticas sobre los modelos de regresión lineal simple y múltiple; interpretación y supuestos de estimadores e introducción a series de tiempo.}
-        \resumeItem{\textbf{Preparador -- Teoría y Política de Comercio Internacional} (Septiembre 2023 -- Marzo 2024): Realización de clases teórico-prácticas sobre la teoría de comercio internacional: modelos ricardiano, Heckscher-Ohlin y Factores específicos. Revisión de teoría arancelaria, economías de escala y crecimiento.}
+        \resumeItem{\textbf{Preparador -- Econometría I} (Febrero 2023 -- Mayo 2024): Planificación de clases teórico-prácticas sobre los modelos de regresión lineal simple y múltiple; interpretación y supuestos de estimadores e introducción a series de tiempo.}
+        \resumeItem{\textbf{Preparador -- Teoría y Política de Comercio Internacional} (Septiembre 2023 -- Marzo 2024): Realización de clases teórico-prácticas sobre la teoría de comercio internacional: modelos ricardiano, Heckscher-Ohlin y factores específicos. Revisión de teoría arancelaria, economías de escala y crecimiento.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Econalítica}{Febrero 2024 -- Abril 2024}
+      {Ecoanalítica}{Febrero 2024 -- Abril 2024}
       {Asistente de investigación - Equipo de investigación}{Caracas, VE}
       \resumeItemListStart
         \resumeItem{Apoyo en el desarrollo de bases de datos sistematizadas, generando consolidados para \textbf{facilitar el análisis de la economía venezolana.}}        
-        \resumeItem{Generación de visualizaciones de datos  a través de Microsoft Excel para la presentación de resultados de investigación.}
+        \resumeItem{Generación de visualizaciones de datos a través de Microsoft Excel para la presentación de resultados de investigación.}
         \resumeItem{Redacción de informes semanales y quincenales sobre la economía venezolana e internacional.}
         \resumeItem{Apoyo en la realización de estudios de mercado y consultoría empresarial.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{COMPETENCIAS TÉCNICAS}
  \begin{itemize}[leftmargin=0in, label={}]
@@ -207,6 +184,36 @@ Economista con formación en análisis cuantitativo y experiencia en investigaci
     }}
  \end{itemize}
 
+%-----------EDUCATION-----------
+\section{EDUCACIÓN}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Católica Andrés Bello}{Sep. 2020 -- Jul. 2024}
+      {Economista}{Caracas, VE}
+        \resumeItemListStart
+          \resumeItem{\textbf{Trabajo de grado}: \textit{Gasto público y crecimiento: Impacto de la reforma de pensiones de Australia de 1992, a través del Método de Control Sintético en el periodo 1980-2019}. Nota 20/20. \textbf{Mención publicación.}}
+          \resumeItem{\textbf{Reconocimiento a la Excelencia Académica}: Otorgado por el alto rendimiento académico durante los periodos 2020--2021 y 2021--2022.}
+          \resumeItem{\textbf{Reconocimiento al Desempeño Docente}: Distinción por la labor desempeñada como tutor pedagógico y preparador de cátedra en Econometría y Comercio Internacional.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICACIONES-----------
+\section{PUBLICACIONES}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{\href{https://anova-evidence.org/2026/09/18/colapso-de-los-servicios-publicos-los-costos-de-la-crisis-de-electricidad-y-agua-sobre-el-mercado-laboral-de-venezuela/}{Colapso de los servicios públicos: Los costos de la crisis de electricidad y agua sobre el mercado laboral de Venezuela}}}
+      {Septiembre 2026}
+    \vspace{-3pt}
+    \resumeSubheading
+      {\textit{Anova Policy Research}}{Caracas, VE}
+      {Coautoría}{}
+      \resumeItemListStart
+        \resumeItem{Análisis empírico sobre el impacto del deterioro de los servicios de agua y electricidad en la productividad, participación laboral e ingresos en Venezuela.}
+        \resumeItem{A cargo del procesamiento de datos, estimación de modelos econométricos y cálculo de la pérdida económica de la precariedad de servicios públicos.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
